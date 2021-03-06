@@ -1,0 +1,671 @@
+.ground-chi-tiet {
+  max-width: 1100px;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 30px 0;
+}
+.ground-chi-tiet .ground-chitiet {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet {
+  max-width: 850px;
+  width: 100%;
+  margin-right: 35px;
+}
+.ground-chi-tiet .ground-chitiet .phim-goi-y {
+  width: 100%;
+  max-width: 250px;
+  position: relative;
+  background-color: #28282d;
+  border-radius: 4px;
+}
+/* ----------------Start Chi Tiet---------------- */
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung {
+  text-align: center;
+  padding: 20px 15px;
+  background-color: #28282d;
+  border-radius: 4px;
+  margin: 35px 0;
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(0, 221, 250);
+  text-align: left;
+  padding-bottom: 20px;
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung p {
+  color: #d7d7d7;
+  text-align: justify;
+  font-size: 17px;
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung button {
+  padding: 5px 25px;
+  text-align: center;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: chocolate;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .chi-tiet {
+  display: flex;
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  align-items: center;
+  background: #28282d;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .chi-tiet .image-chi-tiet {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: 400px;
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .chi-tiet
+  .image-chi-tiet
+  button {
+  position: absolute;
+  background: #0056ff;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .chi-tiet .image-chi-tiet img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .chi-tiet
+  .information-chi-tiet {
+  max-width: 510px;
+  width: 100%;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .chi-tiet
+  .information-chi-tiet
+  h1 {
+  color: yellow;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .chi-tiet
+  .information-chi-tiet
+  p {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: white;
+  padding: 7px 0;
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .chi-tiet
+  .information-chi-tiet
+  span {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: rgb(0, 221, 250);
+}
+.ground-chi-tiet .ground-chitiet .khung-chi-tiet .grounp-Open-YouTube {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(5, 5, 5, 0.85);
+  z-index: 100;
+}
+
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .grounp-Open-YouTube
+  .Open-YouTube
+  button {
+  right: 20px;
+  top: 10px;
+  position: fixed;
+  border: none;
+  z-index: 99999;
+  background: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(78, 77, 76, 0.89);
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .grounp-Open-YouTube
+  .Open-YouTube
+  button
+  .fa-times {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .grounp-Open-YouTube
+  .Open-YouTube
+  .grounp-youtube {
+  position: fixed;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  padding: 10px;
+  max-width: 1100px;
+  transform: translate(-50%, -50%);
+  height: 75vh;
+}
+.ground-chi-tiet
+  .ground-chitiet
+  .khung-chi-tiet
+  .grounp-Open-YouTube
+  .Open-YouTube
+  + div {
+  border: 1px solid red;
+}
+
+/* ----------------End Chi Tiet---------------- */
+
+/* --------------------Start Phim Goi Y--------------------*/
+
+.grounp-phim-goi-y {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.phim-goi-y h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #08fcff;
+  padding: 10px 0;
+  text-align: center;
+}
+.phim-goi-y button {
+  padding: 7px 12px;
+  color: white;
+  background: #00e1eddc;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  border-radius: 4px;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y {
+  position: relative;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y {
+  width: 100%;
+  border: 2px solid rgb(240, 240, 240);
+  position: relative;
+  display: block;
+  height: 275px;
+  max-width: 200px;
+  margin: 9px auto;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y p {
+  position: absolute;
+  width: 80%;
+  display: block;
+  text-transform: capitalize;
+  background: #a21d0a;
+  top: 8px;
+  transform: translate(-50%, 0px);
+  color: white;
+  left: 50%;
+  text-align: center;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y p::before,
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y p::after {
+  content: "";
+  position: absolute;
+  background: #46e1ff;
+  height: 0;
+  border-color: transparent transparent transparent #46e1ff;
+  border-style: solid;
+  border-width: 7px 0 15px 10px;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y p::after {
+  left: 0;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y p::before {
+  right: 0;
+}
+.grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y h1 {
+  display: block;
+  color: #dcf836e6;
+  padding: 0 10px;
+  font-size: 15px;
+  background: #151621;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+}
+/* --------------------End Phim Goi Y--------------------*/
+
+/*--------------------Start phim-de-xuat --------------------*/
+.grounp-phim-de-xuat {
+  padding: 20px 0;
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  background-color: #28282d;
+}
+.grounp-phim-de-xuat button,
+.grounp-phim-de-xuat button:active {
+  padding: 7px 12px;
+  color: white;
+  background: #00e1eddc;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  border-radius: 4px;
+}
+
+.grounp-phim-de-xuat button:hover {
+  background: rgb(240, 240, 6);
+  color: white;
+}
+.grounp-phim-de-xuat h1 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #04fcff;
+  position: relative;
+  padding: 0 25px 35px 25px;
+}
+
+.grounp-phim-de-xuat .phim-de-xuat {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.grounp-phim-de-xuat .phim-de-xuat .list-movie {
+  width: 100%;
+  max-width: calc(100% / 4);
+}
+.grounp-phim-de-xuat .phim-de-xuat .list-movie .movies {
+  margin: 15px 5px;
+  max-width: 210px;
+  height: 275px;
+  position: relative;
+}
+
+.grounp-phim-de-xuat .phim-de-xuat .list-movie .movies .back-face .back p {
+  padding: 4px;
+  font-size: 14px;
+}
+/*--------------------End phim-de-xuat --------------------*/
+
+@media screen and (max-width: 1024px) {
+  .ground-chi-tiet {
+    padding: 10px;
+  }
+  .ground-chi-tiet {
+    margin: 5px auto;
+  }
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie {
+    width: 100%;
+    max-width: calc(100% / 3);
+  }
+  .ground-chi-tiet .ground-chitiet .phim-goi-y {
+    max-width: 235px;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    h1 {
+    font-size: 14px;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .ground-chi-tiet .ground-chitiet .phim-goi-y {
+    max-width: 200px;
+  }
+  .grounp-phim-goi-y .scroll-phim-goi-y .item-phim-goi-y {
+    max-width: 200px;
+    height: 280px;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    h1 {
+    font-size: 17px;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 14px;
+  }
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies .back-face .back p {
+    padding: 4px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies {
+    margin: 5px;
+    max-width: 210px;
+    height: 270px;
+    position: relative;
+  }
+  .grounp-phim-de-xuat
+    .phim-de-xuat
+    .list-movie
+    .movies
+    .item-movie
+    .back-face
+    .back
+    p {
+    padding: 3px;
+  }
+
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 14px;
+    padding: 0 0 10px 0px;
+  }
+  .ground-chi-tiet .ground-chitiet .khung-chi-tiet .chi-tiet .image-chi-tiet {
+    max-width: 210px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ground-chi-tiet .ground-chitiet .phim-goi-y {
+    display: none;
+  }
+  .ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung button {
+    font-size: 12px;
+  }
+  .back-face .back h3 {
+    font-size: 12px;
+  }
+  .front-face .front h3 {
+    font-size: 12px;
+  }
+  .front-face .front p {
+    font-size: 13px;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .image-chi-tiet
+    button {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .back-face {
+    border: 1.5px solid white;
+  }
+  .ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung h1,
+  .grounp-phim-de-xuat h1 {
+    font-size: 17px;
+  }
+  .ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung p {
+    font-size: 14px;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet {
+    padding: 5px;
+  }
+
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+  }
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies {
+    height: 250px;
+  }
+  .grounp-phim-de-xuat
+    .phim-de-xuat
+    .list-movie
+    .movies
+    .item-movie
+    .back-face
+    .back
+    p {
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies {
+    height: 232px;
+  }
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies .back-face .back a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    h1 {
+    padding: 5px 0;
+  }
+  .ground-chi-tiet .ground-chitiet .khung-chi-tiet .chi-tiet {
+    display: block;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .image-chi-tiet
+    button {
+    font-size: 13px;
+    padding: 7px 7px;
+  }
+  .ground-chi-tiet .ground-chitiet .khung-chi-tiet .chi-tiet .image-chi-tiet {
+    max-width: 220px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 14px;
+    padding: 5px 0;
+    text-align: left;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .grounp-Open-YouTube
+    .Open-YouTube
+    .grounp-youtube {
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    padding: 10px;
+    max-width: 1100px;
+    transform: translate(-50%, -50%);
+    height: 40vh !important;
+  }
+
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie {
+    width: 100%;
+    max-width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 411px) {
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 0 2px 0;
+  }
+
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies {
+    height: 215px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 14px;
+    padding: 0 0 3px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .information-chi-tiet
+    p {
+    font-size: 13px;
+    padding: 0 0 2px 0;
+  }
+  .ground-chi-tiet
+    .ground-chitiet
+    .khung-chi-tiet
+    .chi-tiet
+    .image-chi-tiet
+    button {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie {
+    max-width: calc(100% / 1);
+  }
+  .grounp-phim-de-xuat .phim-de-xuat .list-movie .movies {
+    margin: 10px auto;
+    height: 250px;
+  }
+  .grounp-phim-de-xuat
+    .phim-de-xuat
+    .list-movie
+    .movies
+    .item-movie
+    .back-face
+    .back
+    p {
+    padding: 3px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,212 @@
+.Conntent .Header-Conntent {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+.Conntent .Header-Conntent header {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px 5px;
+  flex-wrap: wrap;
+}
+.Conntent .Header-Conntent header > a{
+    display: flex;
+}
+.Conntent .Header-Conntent header > a > img {
+  width: 240px;
+  padding: 0 10px;
+  align-self: center;
+}
+.Conntent .Header-Conntent header form.Tim-Kiem {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+.Conntent .Header-Conntent header form.Tim-Kiem input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  outline: none;
+  background: white;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 4px;
+}
+.Conntent .Header-Conntent header form.Tim-Kiem input::placeholder {
+  color: rgb(122, 122, 122);
+  font-size: 13px;
+}
+.Conntent .Header-Conntent header form.Tim-Kiem i {
+  color: rgb(5, 0, 0);
+  z-index: 100;
+  font-size: 23px;
+  right: 10px;
+  top: 25%;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+}
+.Conntent .Header-Conntent header .Login-out {
+  margin: auto;
+}
+
+.Conntent .Header-Conntent header .Login-out > a {
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  width: 150px;
+  border-radius: 3px;
+  margin: auto 5px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #ff55a5 0, #ff5860 100%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  box-shadow: 0 0 20px 0 rgba(255, 88, 96, 0.5);
+}
+
+/*-------------------End header-------------------*/
+
+/*------------------Start Login User Success------------------*/
+
+.login-user-success .grounp-user-success {
+  width: 100px;
+
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.login-user-success .grounp-user-success .image-user {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+.login-user-success .grounp-user-success .image-user img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+  left: 0;
+}
+
+.login-user-success
+  .grounp-user-success
+  .grounp-information-user
+  .fa-caret-down {
+  color: white;
+  font-size: 17px;
+  z-index: 101;
+  cursor: pointer;
+}
+.login-user-success .grounp-user-success .grounp-information-user p {
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100px;
+  position: relative;
+  display: block;
+  padding: 5px 0;
+}
+
+.menu-user > li:hover .menu-information {
+  display: block;
+  pointer-events: auto;
+}
+.grounp-user-success .grounp-information-user .menu-information {
+  width: 150px;
+  position: absolute;
+  left: -20px;
+  padding: 5px;
+  display: none;
+  bottom: -60px;
+  z-index: 100;
+  background: black;
+  pointer-events: none;
+  animation: showInformation ease-in-out 0.5s;
+}
+@keyframes showInformation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Login-out
+  .login-user-success
+  .grounp-user-success
+  .grounp-information-user
+  .menu-information
+  a {
+  font-size: 16px;
+  padding: 5px 0;
+  display: block;
+  color: white;
+}
+.Login-out
+  .login-user-success
+  .grounp-user-success
+  .grounp-information-user
+  .menu-information
+  a:hover,
+.Login-out
+  .login-user-success
+  .grounp-user-success
+  .grounp-information-user
+  .menu-information
+  button:hover {
+  text-decoration: underline;
+}
+.Login-out
+  .login-user-success
+  .grounp-user-success
+  .grounp-information-user
+  .menu-information
+  button {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 13px;
+  padding: 5px 0;
+  cursor: pointer;
+  color: white;
+}
+/*------------------End Login User Success------------------*/
+
+@media screen and (max-width: 1088px) {
+  .Conntent .Header-Conntent header form.Tim-Kiem {
+    max-width: 570px !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .Conntent .Header-Conntent header {
+    padding: 0 20px;
+  }
+  .Conntent .Header-Conntent header form.Tim-Kiem {
+    max-width: 100% !important;
+  }
+  .Conntent .Header-Conntent header > a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .Conntent .Header-Conntent header .Login-out > a {
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,88 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+ 
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+body {
+    background: #2b2b31;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+   
+}
+body.active{
+    overflow: hidden;
+}
+/*-------------------Start scrollTop -------------------*/
+div#root {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+button.scrollTop {
+    background-color: #000000;
+    border-radius: 0;
+    bottom: 50px;
+    color: #ffffff;
+    font-size: 24px;
+    height: 40px;
+    line-height: 37px;
+    right: 50px;
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-transition-duration: 500ms;
+    position: fixed;
+    transition-duration: 500ms;
+    border: none;
+    bottom: 1000px;
+    right: 25px;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+button.scrollTop:hover {
+    background: #20d8da;
+}
+button.scrollTop.active {
+    bottom: 25px;
+    opacity: 1;
+}
+/*-------------------End scrollTop -------------------*/
+
+/*-------------------Start header-------------------*/
+.Conntent {
+    width: 100%;
+   border-bottom:2px solid #353748;
+}
+/*-------------------End header-------------------*/
+
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border: 5px solid #232943;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    border-radius: 3px;
+    animation: animatecrollPath 5s linear infinite;
+    z-index: 100;
+}
+
+ 

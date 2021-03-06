@@ -1,0 +1,11 @@
+export const GET_API_ALL_MOVIES='GET_API_ALL_MOVIES';
+export const GET_API_BANNER='GET_API_BANNER';
+export const GET_ID_MOVIES='GET_ID_MOVIES';
+export const POST_USER='POST_USER';
+export const GET_LIST_USER='GET_LIST_USER';
+export const GET_ID_ONE_USER='GET_ID_ONE_USER';
+export const POST_COMMENT='POST_COMMENT';
+export const GET_COMMENT='GET_COMMENT';
+export const DELETE_COMMENT='DELETE_COMMENT';
+export const PUT_ID_USER='PUT_ID_USER';
+export const PUT_ID_USER_COMMENT='PUT_ID_USER_COMMENT';

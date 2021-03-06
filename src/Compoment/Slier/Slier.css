@@ -1,0 +1,173 @@
+.ground-slider {
+ background:#28282d;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+  border-radius: 4px;
+}
+.ground-slider h1 {
+  text-align: left;
+  padding: 0 25px 25px 25px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #04fcff;
+  position: relative;
+}
+
+.slick-next, .slick-prev{
+  z-index: 999;
+}
+.list-slider {
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+ max-width:1100px;
+  margin: 0 auto;
+}
+.itel-slider {
+  border: 2px solid white;
+  border-radius: 3px;
+  text-align: center;
+  margin: 20px 0;
+  width: 214px;
+  height: 314px;
+  margin: auto;
+  position: relative;
+}
+.itel-slider .ngonngu-slider {
+  position: absolute;
+  position: absolute;
+  width: 80%;
+  display: block;
+  text-transform: capitalize;
+  background: #a21d0a;
+  top: 8px;
+  transform: translate(-50%, 0px);
+  color: white;
+  left: 50%;
+  overflow: hidden;
+  height: 22px;
+  font-size: 15px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.itel-slider .ngonngu-slider::before,
+.itel-slider .ngonngu-slider::after {
+  content: "";
+  position: absolute;
+  background: #46e1ff;
+  height: 0;
+  border-color: transparent transparent transparent #46e1ff;
+  border-style: solid;
+  border-width: 7px 0 15px 10px;
+}
+.itel-slider .ngonngu-slider::before {
+  left: 0;
+}
+.itel-slider .ngonngu-slider::after {
+  right: 0;
+}
+.itel-slider img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.itel-slider .name-slider {
+  display: block;
+  color: #dcf836e6;
+  padding: 0 10px;
+  font-size: 15px;
+  background: #151621;
+  position: absolute;
+  bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+}
+i.fa.fa-angle-right.right {
+  background: #fff;
+  position: absolute;
+  right: -15px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #007791;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(255,88,96,.5);
+  border-radius: 50%;
+  z-index: 999;
+}
+i.fa.fa-angle-left.left {
+  background: #fff;
+  position: absolute;
+  font-weight: 700;
+  font-size: 20px;
+  color: #007791;
+  transform: translateY(-50%);
+  width: 40px;
+  left: -15px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(255,88,96,.5);
+  border-radius: 50%;
+  z-index: 999;
+}
+.slick-dots li.slick-active button:before {
+  color: #000000 !important  ;
+  font-size: 15px;
+}
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 15px;
+}
+.slick-initialized .slick-slide > div {
+  margin: 0 5px;
+}
+.slick-next:before,
+.slick-prev:before {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .slick-next {
+    right: 20px;
+  }
+  .slick-prev {
+    left: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .itel-slider {
+    height: 285px;
+  }
+  .itel-slider .ngonngu-slider {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .itel-slider {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .itel-slider {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .itel-slider {
+    height: 210px;
+  }
+}

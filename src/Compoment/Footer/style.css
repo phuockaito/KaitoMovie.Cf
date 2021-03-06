@@ -1,0 +1,36 @@
+.main-footer {
+  /* height: 50vh; */
+  background-color: #28282d;
+  position: relative;
+}
+.main-footer .group-footer {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  position: relative;
+  padding: 30px;
+}
+
+.main-footer .group-footer .group-connect {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-footer .group-footer > a > img {
+  width: 250px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.group-connect .email-group,
+.group-connect .location-group,
+.group-connect .website-group {
+  padding: 10px 15px;
+}
+.group-footer .group-connect i {
+  font-size: 1.2em;
+  color: #ffff;
+  padding-right: 10px;
+}
+.group-footer .group-connect span,
+.group-footer .group-connect a {
+  color: rgb(117, 117, 117);
+}

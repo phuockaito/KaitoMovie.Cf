@@ -1,0 +1,220 @@
+.grounp-dang-ky {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.grounp-form {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.grounp-form form h1 {
+    font-size: 27px;
+    color: white;
+    margin: 25px auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+.grounp-form .backgroun-from {
+    max-width: 550px;
+    background: #151621;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.grounp-form .backgroun-from::before {
+    content: "";
+    left: -2px;
+    top: -2px;
+    bottom: -2px;
+    
+    z-index: -1;
+    right: -2px;
+    position: absolute;
+    background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+    filter: blur(10px);
+}
+.grounp-form .backgroun-from::after {
+    content: "";
+    left: -2px;
+    top: -2px;
+    bottom: -2px;
+    z-index: -1;
+    right: -2px;
+    border-radius: 10px;
+    position: absolute;
+    background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.grounp-form form {
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    max-width: 550px;
+    width: 100%;
+}
+.grounp-form form span{
+    color:#e6f105;
+    text-transform: capitalize;
+    font-size:13px;
+    position: relative;
+    display: inline-block;
+    top: -8px;
+}
+.grounp-form form > button {
+    outline: none;
+    border: none;
+    padding: 7px 25px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    margin:10px 0;
+    background: #1877f2;
+    text-transform: capitalize;
+}
+.grounp-form form a {
+    display: block;
+    text-transform: capitalize;
+    padding: 5px 8px;
+    color: white;
+    position: relative;
+    font-size: 16px;
+}
+.grounp-form form button:hover,
+.grounp-form form a:hover {
+    text-decoration: underline;
+}
+.grounp-form form .name-use .grounp-tab,
+.grounp-form form .account-use .grounp-tab,
+.grounp-form form .pass-use .grounp-tab,
+.grounp-form form .comfirm-use .grounp-tab {
+    display: flex;
+    border-radius: 5px;
+    margin: 10px auto;
+    height: 30px;
+    max-width: 400px;
+    line-height: 30px;
+}
+.grounp-form form .name-use,
+.grounp-form form .account-use,
+.grounp-form form .pass-use,
+.grounp-form form .comfirm-use {
+    padding: 2px 20px;
+}
+.grounp-form form p {
+    color: white;
+    font-size: 16px;
+}
+.grounp-form form .icon-input {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: block;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: #20d8da;
+    font-size: 15px;
+}
+.grounp-form form .icon-input i {
+    color: rgb(0, 0, 0);
+}
+.grounp-form form .text-input {
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.grounp-form form .grounp-sex {
+    width: 100%;
+    position: relative;
+}
+.grounp-form form .grounp-sex label {
+    color: white;
+    width: 100%;
+    max-width: 120px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+}
+.grounp-form form .grounp-sex label:hover .checkmark {
+    background: rgb(150, 150, 150);
+}
+.grounp-form form .grounp-sex label .checkmark {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    cursor: pointer;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.grounp-form form .grounp-sex label .checkmark::after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    position: absolute;
+    display: none;
+}
+.grounp-form form .grounp-sex label input:checked ~ .checkmark::after {
+    display: block;
+}
+.grounp-form form .grounp-sex label input {
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+}
+.grounp-form form .grounp-sex label input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+.grounp-form form .text-input input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 5px;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    outline: none;
+    border: none;
+    background: #dfe6e9;
+}
+@media screen and (max-width: 650px) {
+    .grounp-form form h1 {
+        margin: 10px auto;
+        padding-top: 15px;
+    }
+    .grounp-form form {
+        padding: 0;
+    }
+    .grounp-form form button {
+        margin-bottom: 10px;
+    }
+    .grounp-form form a {
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .grounp-form form p,
+    .grounp-form form button,
+    .grounp-form form a,
+    .grounp-form form .grounp-sex label {
+        font-size: 13px;
+    }
+    .grounp-form form h1 {
+        font-size: 20px;
+    }
+    .grounp-form form .grounp-sex label {
+        max-width: 80px;
+    }
+}
