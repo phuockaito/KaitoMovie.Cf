@@ -8,14 +8,24 @@
   margin: 20px auto 0 auto;
   position: relative;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.google-connect-container {
+  max-width: 400px;
+  margin:10px 0;
+}
+.google-maps-container {
+  max-width: 740px;
+  width: 100%;
+  margin:10px 0;
+}
 .main-footer .group-footer .group-connect {
   display: flex;
   flex-wrap: wrap;
 }
-.main-footer .group-footer > a > img {
-  width: 250px;
+.google-connect-container > a > img {
+  max-width: 300px;
   padding: 0 20px;
   margin: auto;
 }
@@ -24,6 +34,8 @@
 .group-connect .location-group,
 .group-connect .website-group {
   padding: 10px 15px;
+  display: block;
+  width: 100%;
 }
 .group-footer .group-connect i {
   font-size: 1.2em;
@@ -33,4 +45,10 @@
 .group-footer .group-connect span,
 .group-footer .group-connect a {
   color: rgb(117, 117, 117);
+}
+
+@media screen and (max-width: 480px) {
+  .main-footer .group-footer {
+    padding: 30px 15px;
+  }
 }

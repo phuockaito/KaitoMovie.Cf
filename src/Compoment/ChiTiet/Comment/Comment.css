@@ -1,15 +1,12 @@
-.grounp-comment {
-  margin: 25px auto;
-  padding: 20px 0;
+.grounp-comment .comment {
   border-radius: 4px;
   background-color: #28282d;
-}
-.grounp-comment .comment {
-  width: 100%;
   position: relative;
   display: block;
   width: 100%;
   max-width: 850px;
+  margin: 25px auto;
+  padding: 20px 0;
 }
 .grounp-comment .iteml-comment button {
   text-align: center;
@@ -28,7 +25,7 @@
 .grounp-comment .comment h1 {
   text-align: left;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.2em;
   color: rgb(0, 221, 250);
   position: relative;
   padding: 0 25px 35px 25px;
@@ -41,13 +38,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 35px 20px;
+  padding: 60px 20px 50px 20px;
+}
+.comment .from-commet .length-from-comment {
+  position: absolute;
+  bottom: 35px;
+  left: 28px;
+}
+.comment .from-commet .length-from-comment p {
+  color: #bbbbbb9e;
+  font-size: 0.9em;
 }
 /*--------------Start Form Comment-------------- */
 
 .grounp-comment .comment .from-commet button {
   position: absolute;
-  bottom: -34px;
+  bottom: -45px;
   right: 6px;
   background: #00fbffb0;
   border: none;
@@ -81,7 +87,7 @@
 }
 .grounp-comment .comment .from-commet .StarRating {
   position: absolute;
-  top: 13px;
+  top: 35px;
   right: 28px;
   cursor: pointer;
 }
@@ -90,7 +96,7 @@
   margin: 10px;
   position: relative;
   display: block;
-  min-height: 120px;
+  min-height: 150px;
 }
 .grounp-comment .comment .from-commet form textarea {
   position: absolute;
@@ -104,7 +110,7 @@
   border: 1px solid white;
   background: none;
   color: #c8d6e5;
-  font-size: 17px;
+  font-size: 1.2em;
 }
 .grounp-comment .comment .from-commet form textarea::placeholder {
   color: rgb(247, 247, 247);
@@ -118,7 +124,9 @@
   position: relative;
   max-width: 850px;
   padding: 20px 30px;
-  border-bottom: 1px solid #504e4e;
+  margin: 15px 0;
+  background: #28282d;
+  border-radius: 4px;
 }
 .gruonp-comment .show-comment {
   display: flex;
@@ -146,20 +154,22 @@
 .gruonp-comment .show-comment .connter-comment {
   width: 100%;
   margin: 10px;
-
   position: relative;
 }
-
+.show-comment .connter-comment span.create-comment {
+  color: #51535d;
+}
 .gruonp-comment .show-comment .connter-comment h2 {
   color: white;
   position: relative;
   left: 45px;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .gruonp-comment .show-comment .connter-comment p {
   color: #bbbbbb;
   padding: 15px 20px;
   margin-top: 20px;
+  line-height: 25px;
 }
 .gruonp-comment .show-comment .connter-comment button {
   border: none;
@@ -167,22 +177,12 @@
   padding: 7px 18px;
   border-radius: 2px;
   position: absolute;
-  right: 0;
+  right: -20px;
+  top: -40px;
   cursor: pointer;
   background: red;
   color: white;
 }
 .gruonp-comment .show-comment .connter-comment button:hover {
   text-decoration: underline;
-}
-@media screen and (max-width: 768px) {
-  .grounp-comment .comment h1 {
-    font-size: 17px;
-  }
-  .gruonp-comment .show-comment .connter-comment p {
-    font-size: 13px;
-  }
-  .grounp-comment .comment .from-commet form textarea::placeholder {
-    font-size: 13px;
-  }
 }

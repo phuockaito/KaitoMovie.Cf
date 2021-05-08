@@ -30,7 +30,6 @@ const Header = () => {
 
     const ShowUser = (ID) => {
         if (ID) {
-
             return (
                 <div className="login-user-success">
                     <div className="grounp-user-success">
@@ -42,7 +41,7 @@ const Header = () => {
                                 <li><p>{GetIdOneUserResult.Name}</p> <span className="fas fa-caret-down" />
                                     <ul className="menu-information">
                                         <li> <Link to="/edit-user" >Thông tin</Link></li>
-                                        <li> <button onClick={LogOut}>Đăng Xuất</button></li>
+                                        <li> <button onClick={LogOut}>Đăng xuất</button></li>
                                     </ul>
                                 </li>
                             </ul>

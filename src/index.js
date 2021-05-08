@@ -8,7 +8,6 @@ import thunk from 'redux-thunk';
 import { Provider } from "react-redux";
 import MyReducers from './Reducers/CombineReducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
-const baserUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 const composeEnhancers = composeWithDevTools({
 });
 const store = createStore(
@@ -17,7 +16,7 @@ const store = createStore(
 );
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={baserUrl}>
+    <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>

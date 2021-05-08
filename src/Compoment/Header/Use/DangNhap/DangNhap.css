@@ -1,49 +1,41 @@
 .grounp-or-login {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 .grounp-or-login .item-width-login button {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-    margin: 0 7px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 5px 7px;
 }
 .grounp-or-login .item-width-login button.facebook {
-    background: #4267b2;
+  background: #4267b2;
 }
 .grounp-or-login .item-width-login button.google {
-    background: #d6220a;
+  background: #d6220a;
 }
 .grounp-or-login .item-width-login button.twitter {
-    background: #1c9dec;
+  background: #1c9dec;
 }
 .grounp-or-login .item-width-login button i {
-    font-size: 18px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+  font-size: 1.2em;
+  padding: 15px 20px;
 }
 .grounp-or-login .item-width-login button i.fa-facebook-f {
-    color: white;
+  color: white;
 }
 .grounp-or-login .item-width-login button i.fa-twitter,
 .grounp-or-login .item-width-login button i.fa-google {
-    color: white;
+  color: white;
 }
 @media screen and (max-width: 650px) {
-    .grounp-or-login .item-width-login button i {
-        font-size: 16px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
+  .grounp-or-login .item-width-login button i {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width:380px){
-    .grounp-or-login .item-width-login button i {
-        font-size: 13px;
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-    }
+@media screen and (max-width: 380px) {
+  .grounp-or-login .item-width-login button i {
+    font-size: 13px;
+  }
 }

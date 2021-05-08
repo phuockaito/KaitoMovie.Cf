@@ -9,6 +9,7 @@ import Footer from '../Compoment/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as Actives from '../Actions/index';
+import { UserContextProvider } from '../contexts/UserContext';
 const App = () => {
 	const dispatch = useDispatch();
 	const GetMoviesAPI = () => dispatch(Actives.GetAPIAllMoviesRequest());
@@ -19,7 +20,7 @@ const App = () => {
 			once: true,
 			initClassName: 'aos-init'
 		})
-	},[])
+	}, [])
 	//
 	const ShowContentMenu = (Routes) => {
 		var result = null;
@@ -36,24 +37,24 @@ const App = () => {
 		return result;
 	}
 	return (
-
-		<Router>
-			<button className="scrollTop">
-				<i className="fa fa-angle-up"></i>
-			</button>
-			<div className="Conntent">
-				<div className="Header-Conntent">
-					<Header />
-					<NavMenu />
+		<UserContextProvider>
+			<Router>
+				<button className="scrollTop">
+					<i className="fa fa-angle-up"></i>
+				</button>
+				<div className="Conntent">
+					<div className="Header-Conntent">
+						<Header />
+						<NavMenu />
+					</div>
 				</div>
-			</div>
-			<Switch>
-				{ShowContentMenu(Routes)}
-				<Redirect to="/" from="/" />
-			</Switch>
-			<Footer/>
-		</Router>
-
+				<Switch>
+					{ShowContentMenu(Routes)}
+					<Redirect to="/" from="/" />
+				</Switch>
+				<Footer />
+			</Router>
+		</UserContextProvider>
 	)
 };
 export default App;

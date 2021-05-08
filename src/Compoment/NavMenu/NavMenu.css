@@ -100,7 +100,7 @@
   left: 0;
   background-color: #28282d;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px 10px;
   transform: translateY(20px);
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
@@ -108,9 +108,9 @@
 }
 .Header-Conntent nav ul.menu-two li {
   position: relative;
-  height: 35px;
+  height: 40px;
   width: 215px;
-  line-height: 35px;
+  line-height: 40px;
   font-size: 16px;
 }
 .Header-Conntent nav > ul.menu-one > li > a > span.fa-caret-down {

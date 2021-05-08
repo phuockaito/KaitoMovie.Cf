@@ -1,73 +1,75 @@
-.grounp-edit-user{
-    width: 100%;
-    position: relative;
-    display: block;
-};
-.grounp-edit-user .edit-user{
-    position: relative;
-    max-width: 1100px;
-    margin:auto;
-    display: block;
-} 
+.grounp-edit-user {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.grounp-edit-user .edit-user {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  display: block;
+}
 /* ----------------------------------Start information------------------------------ */
- 
-.grounp-form   h1{
-    font-size: 27px;
-    color: white;
-    margin: 25px auto;
-    padding-top: 15px;
-    text-align: center;
-    text-transform: capitalize;
+
+.grounp-form h1 {
+  font-size: 27px;
+  color: white;
+  margin: 25px auto;
+  padding-top: 15px;
+  text-align: center;
+  text-transform: capitalize;
 }
-.information-user{
-    padding:20px 0;
-    text-align: center;
+.information-user {
+  padding: 20px 0;
+  text-align: center;
 }
-.information-user p{
-    color:rgb(0, 221, 250);
-    font-size:16px;
-    text-transform: capitalize;
-    padding:5px 10px;
-    text-align: left;
+.information-user p {
+  color: rgb(0, 221, 250);
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  text-align: left;
 }
-.information-user span{
-    color:white;
-    font-size: 17px;
-    padding: 0 5px;   
-    text-transform: none;
+.information-user span {
+  color: white;
+  font-size: 17px;
+  padding: 0 5px;
+  text-transform: none;
 }
-.information-user button{
-    padding: 7px 15px;
-    background: #1877f2;
-    border: none;
-    letter-spacing: 1px;
-    outline: none;
-    cursor: pointer;
-    border-radius: 20px;
-    color: white;
+.information-user button {
+  padding: 10px 25px;
+  background: #1877f2;
+  border: none;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 20px 0;
+  color: white;
 }
-.information-user button:hover{
-    text-decoration: underline;
+.information-user button:hover {
+  text-decoration: underline;
 }
 /* ----------------------------------End information------------------------------ */
 .grounp-dang-ky .grounp-form form {
-    text-align: center;
-    display: block;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  max-width: 550px;
+  width: 100%;
+}
+.grounp-form form > button.button-eidt-user {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+}
+.grounp-form form button.button-eidt-user.active {
+  background: rgb(231, 76, 60) !important;
+}
+@media screen and (max-width: 650px) {
+  .grounp-form form button.button-eidt-user.active {
     position: relative;
-    padding: 20px 0;
-    max-width: 550px;
-    width: 100%;
-}
-.grounp-form form > button.button-eidt-user{
-    display: block;
-    margin:10px auto;
-}
-.grounp-form form   button.button-eidt-user.active{
-    background:rgb(231, 76, 60) !important;
-}
-@media screen and (max-width:650px){
-    .grounp-form form button.button-eidt-user.active{
-        position: relative;
-        bottom:5px;
-    }
+    bottom: 5px;
+  }
 }

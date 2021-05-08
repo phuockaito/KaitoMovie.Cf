@@ -1,16 +1,15 @@
 .ground-banner {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-.ground-banner .banner{
- 
-    margin:auto;
+.ground-banner .banner {
+  margin: auto;
 }
- 
+
 .awssld__bullets button {
-    background: white !important;
+  background: white !important;
 }
 .awssld__bullets .awssld__bullets--active {
-    background: #20b3b6 !important;
+  background: #20b3b6 !important;
 }
 
 /* .awssld__controls button{
@@ -20,54 +19,54 @@
 .awssld__controls__arrow-left:after,
 .awssld__controls__arrow-right:before,
 .awssld__controls__arrow-right:after {
-    background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 .awssld__timer.awssld__timer--run.awssld__timer--fast {
-    background: rgb(0, 255, 255) !important;
+  background: rgb(0, 255, 255) !important;
 }
 .awssld__timer {
-    background: rgb(0, 255, 255) !important;
+  background: rgb(0, 255, 255) !important;
 }
 .information-banner {
-    width: 100%;
-    left: 0;
-    position: absolute;
-    bottom: 0;
-    background: #040d18e0;
-    margin: auto;
-    justify-items: center;
-    text-align: center;
-    padding: 20px 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  background: #040d18e0;
+  margin: auto;
+  justify-items: center;
+  text-align: center;
+  padding: 20px 0;
 }
 .information-banner p.name-banner {
-    color: #dcf836;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 800;
-    font-size: 2rem;
+  color: #dcf836;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 2rem;
 }
 .information-banner span.date-banner {
-    color: rgb(0, 255, 255);
-    text-transform: capitalize;
-    font-size: 1em;
+  color: rgb(0, 255, 255);
+  text-transform: capitalize;
+  font-size: 1em;
 }
 
-@media screen and (max-width: 1024px){
-    .awssld__bullets button{
-        width: 10px !important;
-        height: 10px !important;
-    }
+@media screen and (max-width: 1024px) {
+  .awssld__bullets button {
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .information-banner {
-        padding: 0;
-    }
-    .information-banner p.name-banner {
-        font-size: 15px;
-    }
-    .information-banner span.date-banner {
-        margin-bottom: 0;
-    }
+  .information-banner {
+    padding: 10px;
+  }
+  .information-banner p.name-banner {
+    font-size: 15px;
+  }
+  .information-banner span.date-banner {
+    margin-bottom: 0;
+  }
 }

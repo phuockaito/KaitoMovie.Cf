@@ -24,6 +24,7 @@
     border-radius: 10px;
     width: 100%;
     position: relative;
+    padding:30px 15px;
 }
 .grounp-form .backgroun-from::before {
     content: "";
@@ -67,7 +68,7 @@
 .grounp-form form > button {
     outline: none;
     border: none;
-    padding: 7px 25px;
+    padding: 15px 25px;
     font-size: 15px;
     color: white;
     cursor: pointer;
@@ -79,7 +80,7 @@
 .grounp-form form a {
     display: block;
     text-transform: capitalize;
-    padding: 5px 8px;
+    padding: 15px 8px;
     color: white;
     position: relative;
     font-size: 16px;

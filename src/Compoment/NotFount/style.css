@@ -1,0 +1,19 @@
+.grounp-not-fount {
+  max-width: 1200px;
+  margin: 20px auto;
+  min-height: 20vh;
+  background: #28282d;
+  padding: 30px;
+  text-align: center;
+}
+
+.grounp-not-fount h1 {
+  font-size: 1.2em;
+  color: yellow;
+  padding: 20px 0;
+}
+.grounp-not-fount a {
+  color: #00fcff;
+  text-transform: capitalize;
+  padding: 10px 0;
+}

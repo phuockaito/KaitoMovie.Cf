@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import './Comment.css';
+import moment from 'moment';
 import { useRouteMatch } from "react-router-dom";
 import StarRatings from "react-star-ratings";
 import avatar from '../../../Image/avatar.png';
 import { useSelector, useDispatch } from 'react-redux';
 import Swal from 'sweetalert2';
 import * as ActionType from '../../../Actions/index';
+import 'moment/locale/vi';
+import './Comment.css';
 const IDUser = JSON.parse(localStorage.getItem('ID'));
 const Comment = () => {
- 
-    var NoIdCommnet = [], YesIdCommnet = [], manglengthComment=[],lengthComment;
+
+    var NoIdCommnet = [], YesIdCommnet = [], manglengthComment = [], lengthComment;
     let IdMovie = useRouteMatch().params.ID;
 
     // dispatch
@@ -20,12 +22,13 @@ const Comment = () => {
     const [Comment, SETComment] = useState({ Content: '' });
     const [Start, SETStart] = useState(0);
     const [sendCommnet, setSendCommnet] = useState(5);
-    
+    const [isDisabled, setDisabled] = useState(true);
     const GetIdOneUserResult = useSelector(state => state.GetIdUser);
     const GetComment = useSelector(state => state.Comment);
-   
+    const [lengthCommentUser, setLengthCommentUser] = useState(0);
+
     GetComment.forEach((m, index) => {
-        if(m.IdMovie==IdMovie){
+        if (m.IdMovie == IdMovie) {
             manglengthComment.push(GetComment[index]);
         }
         if (m.IdUser !== IDUser && m.IdMovie === IdMovie) {
@@ -34,28 +37,36 @@ const Comment = () => {
         if (m.IdUser == IDUser && m.IdMovie === IdMovie) {
             YesIdCommnet.unshift(GetComment[index]);
         }
-         
+
     });
     YesIdCommnet.forEach((e) => {
         NoIdCommnet.unshift(e);
     });
     lengthComment = manglengthComment.length;
-  
+
     // function
     const changeRating = (newRating) => {
         SETStart(newRating)
     }
     const OnChangeComment = (event) => {
         SETComment({ ...Comment, [event.target.name]: event.target.value });
-    }
+        setLengthCommentUser(event.target.value.length);
+        if (event.target.value.trim() === '') {
+            setDisabled(true);
+        } else {
+            setDisabled(false)
+        }
+
+    };
+  
     const onSubmitComment = event => {
         event.preventDefault();
         if (IDUser) {
             if (Comment.Content.trim() === '') {
-                Swal.fire('Bình Luận Của Bạn Chưa Có Gì')
+                Swal.fire('Bình Luận Của Bạn Chưa Có Gì');
 
             } else {
-                var NewComment = {
+                let NewComment = {
                     Star: Start,
                     Content: Comment.Content,
                     IdUser: IDUser,
@@ -64,8 +75,9 @@ const Comment = () => {
                     NameUser: GetIdOneUserResult.Name
                 }
                 PostCommentAPI(NewComment);
-                SETComment({ Content: '' })
-                SETStart(0)
+                SETComment({ Content: '' });
+                SETStart(0);
+                setLengthCommentUser(0)
             }
 
         } else {
@@ -80,12 +92,16 @@ const Comment = () => {
 
     const DleteCmt = (IdComment) => {
         DeleteCommentAPIRequest(IdComment)
-    }
+    };
+
     return (
         <>
             <div className="comment">
                 <h1>Bình Luận Về Phim</h1>
                 <div className="from-commet">
+                    <div className="length-from-comment">
+                        <p>{lengthCommentUser} / 500</p>
+                    </div>
                     <div className="StarRating">
                         <StarRatings
                             numberOfStars={5}
@@ -103,12 +119,13 @@ const Comment = () => {
                     </div>
                     <form onSubmit={onSubmitComment}>
                         <textarea
+                            maxLength={500}
                             onChange={OnChangeComment}
                             value={Comment.Content}
                             name='Content'
                             placeholder="Thêm Bình Luận Của Bạn..."
                         />
-                        <button>Gửi</button>
+                        <button disabled={isDisabled}>Gửi</button>
                     </form>
 
                 </div>
@@ -132,6 +149,9 @@ const Comment = () => {
                                         {
                                             comment.IdUser === IDUser && (<button onClick={() => { DleteCmt(comment.ID) }}> Xoá</button>)
                                         }
+                                        <span className="create-comment">
+                                        {moment(comment.Date).subtract(1, 'days').format('DD-MM-YYYY')}
+                                        </span>
                                     </span>
                                 </div>
                             </div>

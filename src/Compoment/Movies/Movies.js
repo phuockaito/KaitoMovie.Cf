@@ -36,7 +36,7 @@ const Movies = () => {
                                                 <p>Thể loại: <span>{movie.TheLoai}</span></p>
                                                 <p>Thời lượng: <span>{movie.ThoiGian} phút</span></p>
                                                 <Link
-                                                    to={`/ChiTiet/${movie.id}/${movie.TenPhim}/${movie.TheLoaiMenu}/${movie.QuocGiaMEnu}`}
+                                                    to={`/ChiTiet/${movie.id}/${movie.TenPhim.toLowerCase()}/${movie.TheLoaiMenu.toLowerCase()}/${movie.QuocGiaMEnu.toLowerCase()}`}
                                                 >
                                                     xem phim</Link>
                                             </div>

@@ -6,6 +6,7 @@
     padding: 0;
     transition: 0.5s ease-in-out;
     box-sizing: border-box;
+    font-size: 1em;
 }
  
 a {
