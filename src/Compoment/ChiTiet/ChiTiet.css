@@ -11,7 +11,8 @@
 .ground-chi-tiet .link-connect-movie {
   padding: 15px 0;
   margin: 15px 0;
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 1px solid #3e4052;
   background:#28282d;
 }
 .ground-chi-tiet .link-connect-movie a,
@@ -47,15 +48,18 @@
   max-width: 250px;
   position: relative;
   background-color: #28282d;
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 1px solid #3e4052;
 }
 /* ----------------Start Chi Tiet---------------- */
 .ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung {
   text-align: center;
   padding: 20px 15px;
   background-color: #28282d;
-  border-radius: 4px;
+  border-radius: 8px;
   margin: 35px 0;
+  border: 1px solid #3e4052;
+
 }
 .ground-chi-tiet .ground-chitiet .khung-chi-tiet .noi-dung h1 {
   text-transform: uppercase;
@@ -79,7 +83,8 @@
   width: 100%;
   align-items: center;
   background: #28282d;
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 1px solid #3e4052;
   padding: 30px;
 }
 .ground-chitiet .khung-chi-tiet .chi-tiet{
@@ -336,8 +341,10 @@
   padding: 20px 0;
   position: relative;
   display: block;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #28282d;
+  border: 1px solid #3e4052;
+
 }
 .grounp-phim-de-xuat button,
 .grounp-phim-de-xuat button:active {

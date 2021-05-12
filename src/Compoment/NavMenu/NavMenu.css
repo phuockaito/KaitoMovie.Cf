@@ -24,7 +24,7 @@
 /* -----------------Start Menu------------ */
 .Header-Conntent .ground-menu {
   position: relative;
- 
+
 }
 .Header-Conntent .ground-menu.active {
   position: fixed !important;
@@ -99,6 +99,7 @@
   top: 100%;
   left: 0;
   background-color: #28282d;
+  border: 1px solid #3e4052;
   border-radius: 5px;
   padding: 20px 10px;
   transform: translateY(20px);

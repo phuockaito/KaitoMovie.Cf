@@ -1,5 +1,6 @@
 .grounp-comment .comment {
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 1px solid #3e4052;
   background-color: #28282d;
   position: relative;
   display: block;

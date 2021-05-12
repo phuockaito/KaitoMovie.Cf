@@ -3,6 +3,9 @@
   background: #28282d;
   margin: 30px auto;
   padding: 30px 20px;
+  border: 1px solid #3e4052;
+  border-radius: 8px;
+
 }
 .title-ground-movie {
   max-width: 1200px;

@@ -3,7 +3,9 @@
     margin:20px auto;
     padding: 30px 20px;
     background: #28282d;
-    border-radius: 4px;
+    border-radius: 8px;
+  border: 1px solid #3e4052;
+
 }
 .title-link-menu{
     max-width: 1100px;
